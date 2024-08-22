@@ -497,7 +497,7 @@ class GitPreTrainedModel(PreTrainedModel):
     supports_gradient_checkpointing = True
     _supports_cache_class = True
     _supports_quantized_cache = True
-    _no_split_modules = ["GitVisionEncoderLayer", "GitLayer"]
+    _no_split_modules = ["GitVisionEncoderLayer", "GitLayer", "GitVisionEmbeddings"]
     
     def _init_weights(self, module):
         """Initialize the weights"""
